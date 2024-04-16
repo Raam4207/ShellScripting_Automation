@@ -2,6 +2,8 @@
 array=(helloservice hiservice nameservice managerservice teamservice)
 for line in "${array[@]}"
 do
+ echo $line
+done
     COUNT=`ps -ef | grep helloservice  | grep -v grep | wc -l`.  RUNNING , 3
     MAX=2
     echo $line
