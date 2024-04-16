@@ -1,4 +1,6 @@
 #!/bin/bash
+mkdir -p /opt/logs
+mkdir -p /opt/logs/ LOG_Backup
 cd /opt/logs/ 
 find . -type f -name '*log*' -exec cp '{}' /opt/logs/Log_Backup \; 
 cd /opt/logs/Log_Backup 
